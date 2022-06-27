@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  background-color: #8ee4af;
+}
+.navbar {
+  text-align: center;
+  padding: 24px;
+  background-color: #191b1f;
+  text-shadow: 2px 2px 2px #379583;
+  color: #edf5e1;
+  font-size: 32px;
+  font-weight: 550;
+  font-family: "Century Gothic","Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 20px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;  
+  box-shadow: 0px 2.1px 5.6px rgba(0, 0, 0, 0.087),
+    0px 5.8px 15.5px rgba(0, 0, 0, 0.125),
+    0px 13.9px 37.4px rgba(0, 0, 0, 0.163), 0px 46px 124px rgba(0, 0, 0, 0.25);
+}
+.main-container {
+  display: flex;
+  padding: 18px;
+  justify-content: space-around;
+  height: 80vh;
+}
+.form-container {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 44px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #191b1f;
+  padding: 48px;
+  border-radius: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 3.8px 5.1px 5.6px rgba(0, 0, 0, 0.087),
+    10.4px 14px 15.5px rgba(0, 0, 0, 0.125),
+    25px 33.8px 37.4px rgba(0, 0, 0, 0.163),
+    83px 112px 124px rgba(0, 0, 0, 0.25);
+}
+.sidebar > * {
+  padding: 14px;
+}
+.form-bg {
+  background-color: #191b1f;
+  color: #fff;
+  width: 50%;
+  padding: 14px;
+  border-radius: 14px;
+  margin: 30px;
+  box-shadow: 3.8px 5.1px 5.6px rgba(0, 0, 0, 0.087),
+    10.4px 14px 15.5px rgba(0, 0, 0, 0.125),
+    25px 33.8px 37.4px rgba(0, 0, 0, 0.163),
+    83px 112px 124px rgba(0, 0, 0, 0.25);
+}
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+.form button {
+  font-family: "Lucida Sans", "Lucida Sans Regular";
+  font-weight: 600;
+  background-color: #5cdb95;
+  border: 2px solid #379583;
+  border-radius: 4px;
+  color: #000;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.form button .clear {
+  background-color: #45464a;
+}
+.header {
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+select {
+  width: 25%;
+}

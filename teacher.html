@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">Attendance Monitoring System</div>
+    <div class="main-container">
+      <div class="sidebar">
+        <div><a href="department.html">Department</a></div>
+        <div><a href="course.html">Course</a></div>
+        <div><a href="subject.html">Subject</a></div>
+        <div><a href="teacher.html">Teacher</a></div>
+        <div><a href="student.html">Student</a></div>
+        <div><a href="attendance.html">Attendance</a></div>
+      </div>
+      <div class="form-container">
+        <div class="form-bg">
+          <div class="header">
+            <h2>Enter Teacher Data</h2>
+          </div>
+          <form id="teacher-form" class="form">
+            <div class="form-control">
+              <label for="t_name">Teacher Name</label>
+              <input type="text" placeholder="" id="t_name" required />
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="teacher_id">Teacher ID</label>
+              <input type="email" placeholder="Will be auto generated" id="teacher_id" disabled />
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="username">Department</label>
+              <input type="number" placeholder="" id="password" required />
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="Course">Gender</label><br />
+              <select name="Course" id="Course">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+              <br />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="buttons">
+              <button class="submit">Submit</button>
+              <button class="clear">Clear</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
