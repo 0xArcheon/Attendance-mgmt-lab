@@ -23,19 +23,20 @@
           <div class="header">
             <h2>Enter Department Data</h2>
           </div>
-          <form id="department-form" class="form">
+          <form id="department-form" class="form" action="connect.php" method="post">
             <div class="form-control">
               <label for="dept_id">Department ID</label>
-              <input type="text" placeholder="Department ID Will be auto generated" id="dept_id" disabled/>
+              <input type="text" placeholder="Department ID Will be auto generated" id="dept_id"
+               name= "dept_id" disabled/>
               <small>Error message</small>
             </div>
             <div class="form-control">
               <label for="dept_name">Department Name</label>
-              <input type="branch" placeholder="" id="dept_name" required />
+              <input type="branch" placeholder="" id="dept_name" required name="dept_name"/>
               <small>Error message</small>
             </div>
             <div class="buttons">
-              <button class="submit">Submit</button>
+              <input type="submit" class="submit">
               <button class="clear" onclick="clearForm()">Clear</button>
             </div>
           </form>

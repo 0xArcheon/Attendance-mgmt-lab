@@ -89,7 +89,7 @@ body {
   padding: 10px;
   width: 100%;
 }
-.form button {
+.buttons > * {
   font-family: "Lucida Sans", "Lucida Sans Regular";
   font-weight: 600;
   background-color: #5cdb95;
