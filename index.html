@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Attendance Management</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
   </head>
   <body>
     <div class="navbar">Attendance Monitoring System</div>
@@ -13,7 +14,7 @@
       <div class="sidebar">
         <div><a href="index.html">Department</a></div>
         <div><a href="./pages/course.html">Course</a></div>
-        <div><a href="./pages/student.html">Subject</a></div>
+        <div><a href="./pages/subject.html">Subject</a></div>
         <div><a href="./pages/teacher.html">Teacher</a></div>
         <div><a href="./pages/student.html">Student</a></div>
         <div><a href="./pages/attendance.html">Attendance</a></div>
@@ -23,10 +24,10 @@
           <div class="header">
             <h2>Enter Department Data</h2>
           </div>
-          <form id="department-form" class="form" action="connect.php" method="post">
+          <form id="department-form" class="form" action="connect.php" method="POST">
             <div class="form-control">
               <label for="dept_id">Department ID</label>
-              <input type="text" placeholder="Department ID Will be auto generated" id="dept_id"
+              <input type="text" placeholder="Department ID Will Be Auto Generated" id="dept_id"
                name= "dept_id" disabled/>
               <small>Error message</small>
             </div>

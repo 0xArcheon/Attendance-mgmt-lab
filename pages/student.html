@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Attendance Management</title>
     <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js"></script>
   </head>
   <body>
     <div class="navbar">Attendance Monitoring System</div>
@@ -13,7 +14,7 @@
       <div class="sidebar">
         <div><a href="../index.html">Department</a></div>
         <div><a href="./course.html">Course</a></div>
-        <div><a href="./student.html">Subject</a></div>
+        <div><a href="./subject.html">Subject</a></div>
         <div><a href="./teacher.html">Teacher</a></div>
         <div><a href="./student.html">Student</a></div>
         <div><a href="./attendance.html">Attendance</a></div>
@@ -23,20 +24,20 @@
           <div class="header">
             <h2>Enter Student Data</h2>
           </div>
-          <form id="student-form" class="form">
+          <form id="student-form" class="form" action="../connect.php" method = "POST">
             <div class="form-control">
               <label for="s_name">Student Name</label>
-              <input type="text" placeholder="" id="s_name" required />
+              <input type="text" placeholder="" id="s_name" name="s_name" required />
               <small>Error message</small>
             </div>
             <div class="form-control">
               <label for="rollno">Roll No</label>
-              <input type="number" placeholder="Roll Number will be auto generated" id="rollno" disabled />
+              <input type="number" placeholder="Roll Number will be auto generated" id="rollno" name="rollno" disabled />
               <small>Error message</small>
             </div>
             <div class="form-control">
               <label for="department">Department</label><br />
-              <select name="Course" id="department">
+              <select name="department" id="department">
                 <option>Civil Engineering</option>
                 <option>Mechanical Engineering</option>
                 <option>Computer Application</option>
@@ -48,12 +49,12 @@
             </div>
             <div class="form-control">
               <label for="admission_yr">Admission Year</label>
-              <input type="date" placeholder="" id="admission_yr" required />
+              <input type="number" placeholder="YYYY" id="admission_yr" name="admission_yr" required />
               <small>Error message</small>
             </div>
             <div class="form-control">
               <label for="s_gender">Gender</label><br />
-              <select name="Course" id="s_gender">
+              <select id="s_gender" name="s_gender">
                 <option>Male</option>
                 <option>Female</option>
                 <option>Other</option>
